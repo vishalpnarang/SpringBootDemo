@@ -15,6 +15,11 @@ public class FirstSpringBootDemoApplication {
 	
 	@RequestMapping("/")
 	public String hello(){
-		return "Hello First Spring Boot Application";
+		return "Hello First Spring Boot Application <a href=\"/welcome\">Welcome Page</a>";
+	}
+	
+	@RequestMapping("/welcome")
+	public String helloWelcome(){
+		return "Welcome Back to Spring Project";
 	}
 }
